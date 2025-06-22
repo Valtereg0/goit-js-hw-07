@@ -5,10 +5,10 @@ function getRandomHexColor() {
 }
 
 const btn = document.querySelector(".change-color");
-const container = document.querySelector(".widget");
+const textCol = document.querySelector("color");
 
 btn.addEventListener('click', () => {
   const newColor = getRandomHexColor();
   document.body.style.backgroundColor = newColor;
-  container.textContent = `Color: ${newColor}`;
+  textCol.textContent = `Color: ${newColor}`;
 });
